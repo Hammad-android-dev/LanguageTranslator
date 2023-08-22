@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="160dp"
+        android:src="@drawable/img_3"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="110dp"
+        android:layout_height="160dp">
+
+    </ImageView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:elevation="10dp"
+       android:id="@+id/cardtranslate"
+        android:layout_marginTop="320dp"
+        android:layout_marginStart="20dp"
+        android:padding="16dp"
+        android:background="@color/shadow_color"
+        app:cardCornerRadius="20dp">
+   <ImageView
+       android:layout_width="70dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="45dp"
+       android:src="@drawable/img_1"
+       android:layout_height="70dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="100dp"
+            android:text="Translate"
+            android:textSize="20dp"
+            android:layout_marginStart="35dp"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="320dp"
+        android:elevation="10dp"
+        android:id="@+id/cardspeech"
+        android:padding="16dp"
+        android:background="@color/shadow_color"
+        app:cardCornerRadius="20dp">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="45dp"
+            android:src="@drawable/img_2"
+            android:layout_height="70dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="100dp"
+            android:text="Text To Speech"
+            android:textSize="20dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+<Button
+    android:layout_width="150dp"
+    android:text="Logout"
+    android:layout_below="@id/cardspeech"
+    android:gravity="center"
+    android:layout_marginTop="40dp"
+    android:layout_marginStart="120dp"
+    android:id="@+id/logout"
+    android:layout_height="50dp"/>
+    <Button
+        android:layout_width="150dp"
+        android:text="Share"
+        android:textColor="#FFF"
+        android:layout_below="@id/logout"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/share"
+        android:layout_height="50dp"/>
+
+</RelativeLayout>

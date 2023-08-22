@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    android:orientation="vertical"
+    tools:context=".VoiceToText">
+
+    <TextView
+        android:id="@+id/VoiceTransText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:text="Voice Translator"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:weightSum="3">
+
+        <Spinner
+            android:id="@+id/fromspinner2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:padding="3dp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/arrow" />
+
+        <Spinner
+            android:id="@+id/tospiner2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:padding="3dp" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Source Text"
+        android:padding="3dp"
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editsourcetext2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textImeMultiLine|textMultiLine"
+            android:textColor="@color/black"
+            android:textColorHint="#0B0A0A"
+            android:textSize="20dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/mic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_2"
+        android:tint="#2196F3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Say Something"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btntranslate2"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="Translate"
+        android:textAlignment="center"
+        android:background="@color/black"
+        android:textColor="#FFF"
+        android:textSize="20dp"></com.google.android.material.button.MaterialButton>
+
+    <TextView
+        android:id="@+id/translatedtext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:hint="Translated Text"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="18sp" />
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "56585547616",
+    "firebase_url": "https://translator-e9896-default-rtdb.firebaseio.com",
+    "project_id": "translator-e9896",
+    "storage_bucket": "translator-e9896.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56585547616:android:f0a37c9bad6596a05a3805",
+        "android_client_info": {
+          "package_name": "com.hammad.translator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56585547616-d63hoj2mfqrr7ehlhm3ql1sb0o8leq5d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hammad.translator",
+            "certificate_hash": "dfadd3da5e837bf3dc4fbdbe803edc9d7d634153"
+          }
+        },
+        {
+          "client_id": "56585547616-ri94kbp3anhpeu0bapagifp2vqao6bl8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCytEW9cTeY13dLcdd1XxyugzgbppXJW-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56585547616-ri94kbp3anhpeu0bapagifp2vqao6bl8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
